@@ -37,7 +37,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch \
 
 ## Switching to Another Wildlife Dataset
 > **Quick tip:**  
-> **1.** Copy the ATRW `*.yml` config **and** its matching datase Python files.  
+> **1.** Copy the ATRW `.yml` config **and** its matching datase Python files.  
 > **2.** Edit the copy—change only `DATASETS.ROOT_DIR` (and `DATASETS.NAMES` if you wish).  
 > **3.** Use the new config with `--config_file …` to train / test on *any* wildlife dataset.
 
