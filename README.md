@@ -2,30 +2,38 @@
 
 
 ## Environment
+```bibtex
 cd AdaFreq
 conda create -n adafreq python=3.10 -y
 conda activate adafreq
 pip install -r requirements.txt
+```
 
 ## Training (single GPU)
+```bibtex
 CUDA_VISIBLE_DEVICES=0 \
 python -m torch.distributed.launch \
   --nproc_per_node=1 --master_port 51119 --use_env \
   ./Adafreq/train.py \
   --config_file ./Adafreq/configs/ATRW/vit_transreid_stride.yml \
   MODEL.DIST_TRAIN True
+```
 
 ## Evaluation
+```bibtex
 python ./Adafreq/test.py \
   --config_file ./Adafreq/configs/ATRW/vit_transreid_stride.yml \
   MODEL.DEVICE_ID "('0')"
+```
 
 ## Multi‑GPU Training
+```bibtex
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch \
   --nproc_per_node=4 --master_port 51119 --use_env \
   ./Adafreq/train.py \
   --config_file ./Adafreq/configs/ATRW/vit_transreid_stride.yml \
   MODEL.DIST_TRAIN True
+```
 
 ## Switching to Another Wildlife Dataset
 > **Quick tip:**  
