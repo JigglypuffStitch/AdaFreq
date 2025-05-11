@@ -1,9 +1,7 @@
 # AdaFreq for Wildlife Re‑Identification  
-AdaFreq is a frequency‑adapted extension of **TransReID** that leverages ViT features for fine‑grained animal re‑ID.
+
 
 ## Environment
-```bash
-git clone https://github.com/YourOrg/AdaFreq.git
 cd AdaFreq
 conda create -n adafreq python=3.10 -y
 conda activate adafreq
