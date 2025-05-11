@@ -45,7 +45,7 @@ If you find this code useful for your research, please cite our paper
   year         = {2024},
   organization = {Springer}
 }
-```bibtex
+```
 
 ## Citation
 Our code is based on TransReID. Thanks for the great work!
@@ -59,4 +59,4 @@ Our code is based on TransReID. Thanks for the great work!
     year      = {2021},
     pages     = {15013-15022}
 }
-```bibtex
+```
