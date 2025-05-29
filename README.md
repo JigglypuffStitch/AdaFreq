@@ -1,5 +1,5 @@
 # [ECCV2024] Adaptive High-Frequency Transformer for Diverse Wildlife Re-Identification
-[pdf](https://arxiv.org/pdf/2410.06977)
+[:page_facing_up: Paper](https://arxiv.org/pdf/2410.06977)
 
 
 ## Environment
